@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+/* --corfundo: rgba(250, 206, 237, 0.932); */
+  /* --corfundo: rgba(255, 94, 208, 0.93); */
+--corfundo: rgba(244,104,148,0.5);
+  --raioborda: 0.5vw;
+}
+header{
+  background-color: var(--corfundo);
+  font-family: "Montserrat"
+}
+body{
+}
+#tituloprincipal{
+  font-size: 2rem;
+  font-family: "Satisfy"
+}
+.navbar-nav{
+    position: absolute;
+    right: 0;
+  }
+.show .navbar-nav{
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 0.5vw;
+  }
+#formcontato{
+  font-family: "Montserrat"
+}
+.modal-content textarea.form-control {
+    margin-left: 0.75rem;
+}
+#caixamsg {
+  line-height: 1.0;
+  width: 95%;
+}
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+.principal{
+  padding: 3em 0;
+  background: rgba(#af27e3, 0.42);
+  width: 75%;
+  font-size: 95%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.principal p {
+  margin: 0 0 1em;
+}
+.principal strong {
+  font-weight: bold;
+}
+#cont-footer{
+  display: inline-block;
+  padding: 0;
+}
+
+/* SEPARADOR CSS DOS CARDS*/
+main{
+    text-align: center;
+    background-color:#e5e5f7;
+    padding: 0.3rem;
+}
+main h2{
+    font-size: 3rem;
+}
+.carta-produto{
+  background-color: #e5e5f7;
+  background-image: linear-gradient(to right, rgba(244,104,148,0.5), rgba(244,104,148,0.5) 7.5px, #e5e5f7 7.5px, #e5e5f7 );
+  background-size: 15px 100%;
+}
+.containerc{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    height: fit-content;
+    margin-left: 10%
+}
+.cardc{
+    text-align: center;
+    margin: 1.2em 1em;
+    border: 0.12rem solid black;
+    border-radius: var(--raioborda);
+    flex-basis: 21%;
+    box-shadow: 0.5vw 0.25vw 1em 0 rgba(0,0,0,0.2);
+}
+.cardc p{
+  font-size: 0;
+}
+.cardc:active p{
+  font-size: 0.7vw;
+  font-family: "Montserrat";
+  text-align: center;
+  background-color: lightskyblue;
+  border-right: 0.12rem solid black;
+  border-left: 0.12rem solid black;
+  border-bottom: 0.12rem solid black;
+  border-bottom-left-radius: var(--raioborda);
+  border-bottom-right-radius: var(--raioborda);
+  -webkit-transform: scale(1.013);
+  transition: 300ms;
+}
+@-moz-document url-prefix(){
+  .cardc:active p{
+    transform: scale(1.007);
+  }
+}
+.cardc:active .cardlabel{
+  border-radius: 0px;
+}
+.cardc:active{
+    border-color: black;
+    border-radius: 0px;
+    border-bottom: 0px;
+    transition: 300ms;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    margin-bottom: 7%;
+
+}
+.cardc img{
+    width: 100%;
+    height:85%;
+    border-top-left-radius: var(--raioborda);
+    border-top-right-radius: var(--raioborda);
+    aspect-ratio: 0.85;
+    object-fit: cover;
+}
+.cardlabel{
+    border-top:black 2px solid;
+    background-color: lightskyblue;
+    border-bottom-left-radius: var(--raioborda);
+    border-bottom-right-radius: var(--raioborda);
+    height: 15%;
+    padding-top: 0.8vw;
+    font-size: 100%;
+    font-family: "Montserrat"
+    color: darkblue;
+}
+@media only screen and (max-width: 768px) {
+  .cardc{
+    flex-basis: 35%;
+    min-width: fit-content;
+  }
+  .cardlabel{
+    font-size: 100%
+  }
+  .cardc:active{
+    margin-bottom: 40%;
+  }
+  .cardc:active p{
+    font-size: 100%;
+  }
+}
+.footer-inicio {
+  text-align: center;
+  background-color: rgb(245, 218, 243);
+  padding-bottom: 5px;
+}
+.icone{
+  width: 10rem;
+  height: 10rem;
+  background: none;
+  scale:0.8;
+
+}
+.tabela table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000000;
+  text-align: center;
+}
+.tabela thead {
+  background: #555555;
+  color:white;
+  font-weight: bold;
+  border: 2px solid #000000;
+}
+.tabela td,th {
+  border: 1px solid #000000;
+  padding: 10px 5px;
+}
+.logo-hp{
+  width: 25rem;
+  height: 25rem;
+  margin-top: 20px;
+}
+.footer-final{
+  background-color: #193262;
+  padding: 1vw;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-final a{
+  text-decoration: none;
+  color: white;
+}
