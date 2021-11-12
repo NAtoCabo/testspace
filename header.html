@@ -1,0 +1,75 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="cabeçalho">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="tituloprincipal">Happiness Cup</a>
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-auto mt-2 mt-sm-0">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" href="produtos.html">Produtos</a>
+              <a class="nav-link" href="sobre.html">Quem somos</a>
+              <a class="nav-link" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#formcontato" aria-expanded="false" aria-controls="collapseExample" href="#">Entre em Contato</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="formcontato" tabindex="-1" aria-labelledby="formcontato" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formcontato">Faça seu pedido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nomesobrenome" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="nomesobrenome" required="" placeholder="Nome e sobrenome">
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" placeholder="seuemail@dominio.com">
+                  <div id="emailHelp" class="form-text">Não enviaremos spam</div>
+                </div>
+                <div class="mb-3">
+                  <label for="formtel" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="formtel" required="" placeholder="(XX)XXXXX-XXXX">
+                </div>
+                <div class="mb-3">
+                  <label for="cidade" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" id="cidade" required="" placeholder="São Paulo">
+                </div>
+
+                <div class="mb-3">
+                  <label for="endereco" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" id="endereco" required="" placeholder="R. Happiness Cup">
+                </div>
+
+                <fieldset class="mb-3">
+                    <legend class="form-label" style="font-size:1rem">Qual produto deseja adquirir?</legend>
+                    <select>
+                        <option>Cups Uva</option>
+                        <option>Cups Morango</option>
+                        <option>Cookie</option>
+                        <option>Brigadeiros Gourmet</option>
+                        <option>Brownie</option>
+                        <option>Cone Trufado</option>
+                        <option>Coxinha</option>
+                        <option>Palha Italiana</option>
+                    </select>
+                </fieldset>
+            </form></div>
+              <div class="mb-3" id="caixamsg">
+                <label for="mensagem" class="form-label" style="margin: 0.75rem">Deixe seu comentário</label>
+                <textarea rows="5" cols="1" id="mensagem" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </div>
+          </div>
+        </div>
+
+</header>
